@@ -13,3 +13,6 @@ A simple React project that allows users to enter their resume information and s
 - React
 - Vite
 - CSS
+
+
+##Resume Builder Project 
