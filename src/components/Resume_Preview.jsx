@@ -1,23 +1,101 @@
-const Resume_Preview = ({ name, role, about }) => {
+const Resume_Preview = ({ resume }) => {
+
     return (
         <div className="resume">
-            <h2>Resume Preview</h2>
 
             <div className="resume-content">
-                {/* Name Section */}
-                <div className="resume-section name-section">
-                    <h1>{name || "Your Name"}</h1>
-                    <h3>{role || "Your Role"}</h3>
+
+                {/* HEADER */}
+                <div className="resume-header">
+
+                    <h1>
+                        {resume.name || "Your Name"}
+                    </h1>
+
+                    <h2>
+                        {resume.role || "Professional Role"}
+                    </h2>
+
+                    <div className="contact-info">
+
+                        {resume.email && (
+                            <span>{resume.email}</span>
+                        )}
+
+                        {resume.phone && (
+                            <span>{resume.phone}</span>
+                        )}
+
+                        {resume.location && (
+                            <span>{resume.location}</span>
+                        )}
+
+                    </div>
+
                 </div>
 
-                {/* Divider */}
-                <div className="resume-divider"></div>
+                {/* ABOUT */}
+                {resume.about && (
+                    <section>
+                        <h3>PROFILE</h3>
+                        <p>{resume.about}</p>
+                    </section>
+                )}
 
-                {/* About Section */}
-                <div className="resume-section about-section">
-                    <p>{about || "Your introduction will appear here..."}</p>
-                </div>
+                {/* SKILLS */}
+                {resume.skills.length > 0 && (
+                    <section>
+                        <h3>SKILLS</h3>
+
+                        <div className="resume-skills">
+                            {resume.skills.map((skill, index) => (
+                                <span key={index}>
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+
+                    </section>
+                )}
+
+                {/* EDUCATION */}
+                {resume.education && (
+                    <section>
+                        <h3>EDUCATION</h3>
+
+                        <p className="pre-line">
+                            {resume.education}
+                        </p>
+
+                    </section>
+                )}
+
+                {/* EXPERIENCE */}
+                {resume.experience && (
+                    <section>
+                        <h3>EXPERIENCE</h3>
+
+                        <p className="pre-line">
+                            {resume.experience}
+                        </p>
+
+                    </section>
+                )}
+
+                {/* PROJECTS */}
+                {resume.projects && (
+                    <section>
+                        <h3>PROJECTS</h3>
+
+                        <p className="pre-line">
+                            {resume.projects}
+                        </p>
+
+                    </section>
+                )}
+
             </div>
+
         </div>
     );
 };
