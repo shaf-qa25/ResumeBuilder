@@ -3,6 +3,7 @@ import "./App.css";
 import Resume_Editor from "./components/Resume_Editor";
 import Resume_Preview from "./components/Resume_Preview";
 import StarBorder from "./components/StarBorder";
+import logo from "./assest/logo.png";
 
 function App() {
     const [name, setName] = useState("");
@@ -10,8 +11,20 @@ function App() {
     const [about, setAbout] = useState("");
 
     return (
+        
         <div className="app">
-            <h1>Live Resume Editor</h1>
+            <div className="navbar">
+                <button>Sign up</button>
+                  <button>Login</button>
+                  <button>Templates</button>
+                  <button>About</button>
+            </div>
+            <div className="logo">
+                 <img src={logo} alt="BDCOE Logo" />
+                  <h1>Live Resume Editor</h1>
+                  
+            </div>
+           
 
             <div className="resume-container">
                 <StarBorder
@@ -46,6 +59,10 @@ function App() {
                     />
                 </StarBorder>
             </div>
+        <div className="footer">
+            <h5>learn.develop.execute</h5>
+            <img src={logo} alt="BDCOE Logo" />
+        </div>
         </div>
     );
 }
