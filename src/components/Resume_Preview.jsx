@@ -1,4 +1,4 @@
-const Resume_Preview = ({ name, role, about }) => {
+const Resume_Preview = ({ name, role, about,Skills}) => {
     return (
         <div className="resume">
             <h2>Resume Preview</h2>
@@ -17,8 +17,15 @@ const Resume_Preview = ({ name, role, about }) => {
                 <div className="resume-section about-section">
                     <p>{about || "Your introduction will appear here..."}</p>
                 </div>
+
+                {/* Skills Section */}
+                <div className="resume-section skills-section">
+                    <h3>Skills</h3>
+                    <p>Write about your skills</p>
+                </div>
+
+                </div>
             </div>
-        </div>
     );
 };
 

@@ -8,6 +8,7 @@ function App() {
     const [name, setName] = useState("");
     const [role, setRole] = useState("");
     const [about, setAbout] = useState("");
+    const [Skills,setSkills]= useState("")
 
     return (
         <div className="app">
@@ -27,6 +28,7 @@ function App() {
                         setName={setName}
                         setRole={setRole}
                         setAbout={setAbout}
+                        setSkills={setSkills}
                     />
                 </StarBorder>
 
@@ -43,6 +45,7 @@ function App() {
                         name={name}
                         role={role}
                         about={about}
+                        Skills={Skills}
                     />
                 </StarBorder>
             </div>

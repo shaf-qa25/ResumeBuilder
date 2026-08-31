@@ -9,7 +9,7 @@ const StarBorder = ({
   thickness = 1,
   backgroundColor = '#000000',
   textColor = '#ffffff',
-  borderColor = '#222222',
+  borderColor = '#f452d9',
   children,
   ...rest
 }) => {
@@ -49,6 +49,15 @@ const StarBorder = ({
       >
         {children}
       </div>
+      <div
+        className="resume_section skills_section"
+        style={{
+          background: backgroundColor,
+          color: textColor,
+          borderColor: borderColor,
+          padding: '30px'
+        }}
+      ></div>
     </Component>
   );
 };
