@@ -172,3 +172,26 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 6px;
+    font-size: 0.9rem;
+}
+
+.contact-info span {
+    color: #0284c7;
+}
+
+.github-link {
+    color: #0284c7;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
