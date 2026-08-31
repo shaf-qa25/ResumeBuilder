@@ -13,7 +13,7 @@ const Resume_Editor = ({ setName, setRole, setAbout }) => {
             <input type="text" placeholder="Enter your role" onChange={(e) => setRole(e.target.value)} />
 
             <label>About</label>
-            <textarea placeholder="write something about yourself" onChange={(e) => setAbout(e.target.value)}></textarea>
+            <textarea placeholder="Write something about yourself.." onChange={(e) => setAbout(e.target.value)}></textarea>
 
         </div>
     )

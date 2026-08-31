@@ -11,7 +11,7 @@ function App() {
 
     return (
         <div className="app">
-            <h1>Live Resume Editor</h1>
+            <h1>ResumeForge</h1>
 
             <div className="resume-container">
                 <StarBorder
@@ -36,8 +36,8 @@ function App() {
                     color="#0284c7"
                     speed="6s"
                     thickness={4}
-                    backgroundColor="#ffffff"
-                    borderColor="rgba(14, 165, 233, 0.35)"
+                    backgroundColor="#fbf8f8"
+                    borderColor="rgba(49, 17, 180, 0.35)"
                 >
                     <Resume_Preview
                         name={name}
