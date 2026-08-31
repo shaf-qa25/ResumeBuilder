@@ -49,6 +49,15 @@ const StarBorder = ({
       >
         {children}
       </div>
+      <div
+        className="resume_section skills_section"
+        style={{
+          background: backgroundColor,
+          color: textColor,
+          borderColor: borderColor,
+          padding: '30px'
+        }}
+      ></div>
     </Component>
   );
 };
