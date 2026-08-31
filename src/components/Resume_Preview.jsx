@@ -1,4 +1,4 @@
-const Resume_Preview = ({ name, role, about }) => {
+const Resume_Preview = ({ name, role, about}) => {
     return (
         <div className="resume">
             <h2>Resume Preview</h2>

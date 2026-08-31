@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-const Resume_Editor = ({ setName, setRole, setAbout }) => {
+const Resume_Editor = ({ setName, setRole, setAbout}) => {
     return (
         <div>
             <h2>Edit Your Resume</h2>
@@ -14,7 +14,6 @@ const Resume_Editor = ({ setName, setRole, setAbout }) => {
 
             <label>About</label>
             <textarea placeholder="write something about yourself" onChange={(e) => setAbout(e.target.value)}></textarea>
-
         </div>
     )
 }
