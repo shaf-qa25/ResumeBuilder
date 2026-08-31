@@ -13,10 +13,7 @@ html {
 body {
     min-width: 320px;
     min-height: 100vh;
-
     font-family: "Poppins", sans-serif;
-
     background: #f8fafc;
-
     color: #111827;
 }
