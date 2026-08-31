@@ -8,6 +8,7 @@ function App() {
     const [name, setName] = useState("");
     const [role, setRole] = useState("");
     const [about, setAbout] = useState("");
+    const [hobbies, setHobbies] = useState("");
 
     return (
         <div className="app">
@@ -26,6 +27,7 @@ function App() {
                     <Resume_Editor
                         setName={setName}
                         setRole={setRole}
+                        setHobbies={setHobbies}
                         setAbout={setAbout}
                     />
                 </StarBorder>
@@ -42,6 +44,7 @@ function App() {
                     <Resume_Preview
                         name={name}
                         role={role}
+                        hobbies={hobbies}
                         about={about}
                     />
                 </StarBorder>
