@@ -12,6 +12,7 @@ function App() {
     return (
         <div className="app">
             <h1>Live Resume Editor</h1>
+            <p className="app-subtitle">Build your resume and see changes instantly.</p>
 
             <div className="resume-container">
                 <StarBorder
