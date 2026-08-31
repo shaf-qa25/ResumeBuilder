@@ -9,7 +9,7 @@ const StarBorder = ({
   thickness = 1,
   backgroundColor = '#000000',
   textColor = '#ffffff',
-  borderColor = '#f452d9',
+  borderColor = '#222222',
   children,
   ...rest
 }) => {
