@@ -5,28 +5,70 @@ import Resume_Preview from "./components/Resume_Preview";
 import StarBorder from "./components/StarBorder";
 
 function App() {
-    const [name, setName] = useState("");
-    const [role, setRole] = useState("");
-    const [about, setAbout] = useState("");
+    const [resume, setResume] = useState({
+        name: "",
+        role: "",
+        email: "",
+        phone: "",
+        location: "",
+        about: "",
+        skills: [],
+        education: "",
+        experience: "",
+        projects: "",
+    });
+
+    const updateResume = (field, value) => {
+        setResume((prev) => ({
+            ...prev,
+            [field]: value,
+        }));
+    };
+
+    const addSkill = (skill) => {
+        if (!skill.trim()) return;
+
+        setResume((prev) => ({
+            ...prev,
+            skills: [...prev.skills, skill.trim()],
+        }));
+    };
+
+    const removeSkill = (index) => {
+        setResume((prev) => ({
+            ...prev,
+            skills: prev.skills.filter((_, i) => i !== index),
+        }));
+    };
 
     return (
         <div className="app">
-            <h1>Live Resume Editor</h1>
+            <header className="app-header">
+                <div>
+                    <span className="badge">RESUME BUILDER</span>
+                    <h1>Build Your <span>Professional Resume</span></h1>
+                    <p>
+                        Create and preview your resume in real-time.
+                    </p>
+                </div>
+            </header>
 
             <div className="resume-container">
+
                 <StarBorder
                     as="div"
                     className="editor-section"
                     color="#0284c7"
                     speed="6s"
-                    thickness={4}
+                    thickness={3}
                     backgroundColor="#ffffff"
-                    borderColor="rgba(14, 165, 233, 0.35)"
+                    borderColor="rgba(14, 165, 233, 0.25)"
                 >
                     <Resume_Editor
-                        setName={setName}
-                        setRole={setRole}
-                        setAbout={setAbout}
+                        resume={resume}
+                        updateResume={updateResume}
+                        addSkill={addSkill}
+                        removeSkill={removeSkill}
                     />
                 </StarBorder>
 
@@ -35,16 +77,13 @@ function App() {
                     className="preview-section"
                     color="#0284c7"
                     speed="6s"
-                    thickness={4}
+                    thickness={3}
                     backgroundColor="#ffffff"
-                    borderColor="rgba(14, 165, 233, 0.35)"
+                    borderColor="rgba(14, 165, 233, 0.25)"
                 >
-                    <Resume_Preview
-                        name={name}
-                        role={role}
-                        about={about}
-                    />
+                    <Resume_Preview resume={resume} />
                 </StarBorder>
+
             </div>
         </div>
     );
