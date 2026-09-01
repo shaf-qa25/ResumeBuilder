@@ -1,7 +1,7 @@
 .app {
     min-height: 100vh;
     padding: 50px 32px;
-    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #faf5ff 0%, #ffffff 50%, #f3e8ff 100%);
     font-family: "Poppins", sans-serif;
 }
 
@@ -11,7 +11,7 @@
     margin-bottom: 45px;
     font-weight: 700;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #38bdf8 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 50%, #a78bfa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -39,7 +39,7 @@
     margin: 0 0 24px;
     font-size: 18px;
     font-weight: 700;
-    background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%);
+    background: linear-gradient(135deg, #0369a1 0%, #8b5cf6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -65,12 +65,12 @@
 .editor-section textarea {
     width: 100%;
     padding: 12px 16px;
-    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
     border: 1.5px solid #bae6fd;
     border-radius: 10px;
     font-size: 14px;
     font-family: inherit;
-    color: #0c4a6e;
+    color: #4c1d95;
     outline: none;
     transition: all 0.2s ease;
 }
@@ -117,15 +117,15 @@
 /* Name section - centered, prominent */
 .name-section {
     text-align: center;
-    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
-    border-bottom: 3px solid #0ea5e9;
+    background: linear-gradient(135deg, #f3e8ff 0%, #faf5ff 100%);
+    border-bottom: 3px solid #8b5cf6;
 }
 
 .resume-content h1 {
     margin: 0 0 8px;
     font-size: 34px;
     font-weight: 800;
-    color: #0c4a6e;
+    color: #4c1d95;
     letter-spacing: -0.5px;
 }
 
@@ -133,13 +133,13 @@
     margin: 0;
     font-size: 17px;
     font-weight: 600;
-    color: #0ea5e9;
+    color: #8b5cf6;
 }
 
 /* Divider line */
 .resume-divider {
     height: 3px;
-    background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa, #8b5cf6);
     margin: 0;
     border-radius: 0;
 }
@@ -154,7 +154,7 @@
     margin: 0 0 12px;
     font-size: 13px;
     font-weight: 700;
-    color: #0ea5e9;
+    color: #8b5cf6;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -166,6 +166,38 @@
     color: #1e293b;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.skill-tag {
+    background: #f3e8ff;
+    color: #0369a1;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+/* Reset Button */
+.editor-section button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.editor-section button:hover {
+    background: #6d28d9;
+}
 /* Responsive */
 @media (max-width: 900px) {
     .resume-container {

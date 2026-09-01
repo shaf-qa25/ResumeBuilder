@@ -9,6 +9,27 @@ function App() {
     const [role, setRole] = useState("");
     const [about, setAbout] = useState("");
 
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [location, setLocation] = useState("");
+    const [skills, setSkills] = useState("");
+    const [college, setCollege] = useState("");
+    const [degree, setDegree] = useState("");
+    const [year, setYear] = useState("");
+
+    const handleReset = () => {
+        setName("");
+        setRole("");
+        setAbout("");
+        setEmail("");
+        setPhone("");
+        setLocation("");
+        setSkills("");
+        setCollege("");
+        setDegree("");
+        setYear("");
+    };
+
     return (
         <div className="app">
             <h1>Live Resume Editor</h1>
@@ -27,6 +48,14 @@ function App() {
                         setName={setName}
                         setRole={setRole}
                         setAbout={setAbout}
+                        setEmail={setEmail}
+                        setPhone={setPhone}
+                        setLocation={setLocation}
+                        setSkills={setSkills}
+                        setCollege={setCollege}
+                        setDegree={setDegree}
+                        setYear={setYear}
+                        handleReset={handleReset}
                     />
                 </StarBorder>
 
@@ -43,6 +72,13 @@ function App() {
                         name={name}
                         role={role}
                         about={about}
+                        email={email}
+                        phone={phone}
+                        location={location}
+                        skills={skills}
+                        college={college}
+                        degree={degree}
+                        year={year}
                     />
                 </StarBorder>
             </div>
