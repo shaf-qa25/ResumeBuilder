@@ -10,7 +10,7 @@ const Resume_Editor = ({ setName, setRole, setAbout,setstudentno,setcollegemail,
             <input type="text" placeholder="enter your name" onChange={(e) => setName(e.target.value)} />
 
             <label>Student Number</label>
-            <input  type="text" placeholder="enter your student number" onChange={(e)=> setstudentno(e.target.value)} />
+            <input type="text" placeholder="enter your student number" onChange={(e)=> setstudentno(e.target.value)} />
 
             <label>College Mail</label>
             <input type="text" placeholder="enter your college mail" onChange={(e)=> setcollegemail(e.target.value)} />
