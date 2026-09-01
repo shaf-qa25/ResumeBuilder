@@ -17,11 +17,11 @@ function App() {
                 <StarBorder
                     as="div"
                     className="editor-section"
-                    color="#0284c7"
-                    speed="6s"
+                    color="#ff5e00"
+                    speed="8s"
                     thickness={4}
                     backgroundColor="#ffffff"
-                    borderColor="rgba(14, 165, 233, 0.35)"
+                    borderColor="rgb(233, 164, 14)"
                 >
                     <Resume_Editor
                         setName={setName}
