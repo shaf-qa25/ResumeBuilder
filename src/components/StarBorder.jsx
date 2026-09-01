@@ -5,7 +5,7 @@ const StarBorder = ({
   as,
   className = '',
   color = 'white',
-  speed = '6s',
+  speed = '3s',
   thickness = 1,
   backgroundColor = '#000000',
   textColor = '#ffffff',
