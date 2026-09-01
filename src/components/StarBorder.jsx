@@ -1,19 +1,19 @@
-import React from 'react';
-import './StarBorder.css';
+// import React from 'react';
+import "./StarBorder.css";
 
 const StarBorder = ({
   as,
-  className = '',
-  color = 'white',
-  speed = '6s',
+  className = "",
+  color = "white",
+  speed = "6s",
   thickness = 1,
-  backgroundColor = '#000000',
-  textColor = '#ffffff',
-  borderColor = '#222222',
+  backgroundColor = "#000000",
+  textColor = "#ffffff",
+  borderColor = "#222222",
   children,
   ...rest
 }) => {
-  const Component = as || 'button';
+  const Component = as || "button";
 
   return (
     <Component
@@ -21,21 +21,21 @@ const StarBorder = ({
       {...rest}
       style={{
         padding: `${thickness}px`,
-        ...rest.style
+        ...rest.style,
       }}
     >
       <div
         className="star-movement-bottom"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 30%)`,
-          animationDuration: speed
+          animationDuration: speed,
         }}
       ></div>
       <div
         className="star-movement-top"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 30%)`,
-          animationDuration: speed
+          animationDuration: speed,
         }}
       ></div>
       <div
@@ -44,7 +44,7 @@ const StarBorder = ({
           background: backgroundColor,
           color: textColor,
           borderColor: borderColor,
-          padding: '30px' // padding for the inner card surface
+          padding: "30px", // padding for the inner card surface
         }}
       >
         {children}
