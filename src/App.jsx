@@ -7,7 +7,10 @@ import StarBorder from "./components/StarBorder";
 function App() {
     const [name, setName] = useState("");
     const [role, setRole] = useState("");
+    const [Email, setEmail] = useState("");
+    const [GitHub, setGitHub] = useState("");
     const [about, setAbout] = useState("");
+    
 
     return (
         <div className="app">
@@ -27,6 +30,7 @@ function App() {
                         setName={setName}
                         setRole={setRole}
                         setAbout={setAbout}
+                        
                     />
                 </StarBorder>
 
