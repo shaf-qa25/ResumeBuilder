@@ -172,3 +172,492 @@
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   TEMPLATE SELECTOR
+========================= */
+
+.template-selector {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.template-selector h2 {
+  margin-bottom: 15px;
+}
+
+.template-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.template-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #0284c7;
+  background: white;
+  color: #0284c7;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.template-buttons button:hover,
+.template-buttons button.active {
+  background: #0284c7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   COMMON RESUME
+========================= */
+
+.resume {
+  width: 100%;
+  min-height: 700px;
+  background: white;
+  color: #222;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.resume h1 {
+  margin: 0;
+}
+
+.resume h2 {
+  margin-top: 25px;
+  padding-bottom: 8px;
+}
+
+.resume h3 {
+  margin: 8px 0;
+}
+
+.resume p {
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PROFESSIONAL TEMPLATE
+========================= */
+
+.professional-template {
+  font-family: Arial, sans-serif;
+}
+
+.professional-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #222;
+}
+
+.professional-header h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.professional-header h3 {
+  font-weight: normal;
+}
+
+.professional-template section {
+  margin-top: 20px;
+}
+
+.professional-template section h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999;
+}
+
+
+/* =========================
+   MODERN TEMPLATE
+========================= */
+
+.modern-template {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.modern-sidebar {
+  padding: 35px 20px;
+  background: #172554;
+  color: white;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.modern-sidebar h1 {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: visible;
+}
+.modern-sidebar h3 {
+  font-weight: normal;
+}
+
+.sidebar-section {
+  margin-top: 40px;
+}
+
+.sidebar-section h4 {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 8px;
+}
+
+.modern-content {
+  padding: 35px;
+}
+
+.modern-content section {
+  margin-bottom: 25px;
+}
+
+.modern-content h2 {
+  color: #172554;
+  border-bottom: 2px solid #172554;
+}
+
+
+/* =========================
+   CREATIVE TEMPLATE
+========================= */
+
+.creative-template {
+  font-family: Arial, sans-serif;
+}
+
+.creative-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #f1f5f9;
+  border-left: 8px solid #7c3aed;
+}
+
+.creative-header h1 {
+  font-size: 36px;
+  color: #7c3aed;
+}
+
+.creative-header h3 {
+  color: #555;
+}
+
+.creative-contact {
+  text-align: right;
+}
+
+.creative-body {
+  padding: 20px 10px;
+}
+
+.creative-body section {
+  margin-bottom: 25px;
+}
+
+.creative-body h2 {
+  color: #7c3aed;
+  border-left: 5px solid #7c3aed;
+  padding-left: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  padding: 8px 14px;
+  background: #ede9fe;
+  color: #6d28d9;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .modern-template {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-sidebar {
+    padding: 25px;
+  }
+
+  .creative-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .creative-contact {
+    text-align: left;
+  }
+
+  .resume {
+    padding: 25px;
+  }
+
+  .template-buttons {
+    gap: 8px;
+  }
+
+  .template-buttons button {
+    padding: 8px 14px;
+  }
+}
+/* =====================================
+   COMMON RESUME
+===================================== */
+
+.resume {
+  width: 100%;
+  min-height: 700px;
+  background: white;
+  color: #222;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.resume p {
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.resume section {
+  margin-bottom: 28px;
+}
+
+/* =====================================
+   PROFESSIONAL TEMPLATE
+===================================== */
+
+.professional-template {
+  padding: 45px;
+  font-family: Arial, sans-serif;
+}
+
+.professional-header {
+  text-align: center;
+  border-bottom: 3px solid #0284c7;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+.professional-header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #111827;
+}
+
+.professional-header h3 {
+  margin: 10px 0 0;
+  color: #0284c7;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.professional-body h2 {
+  color: #0284c7;
+  font-size: 19px;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 7px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.professional-body p {
+  font-size: 14px;
+  color: #374151;
+}
+
+
+/* =====================================
+   MODERN TEMPLATE
+===================================== */
+
+.modern-template {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  min-height: 700px;
+  font-family: Arial, sans-serif;
+}
+
+.modern-sidebar {
+  background: #172554;
+  color: white;
+  padding: 35px 25px;
+}
+
+.modern-sidebar h1 {
+  font-size: 30px;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.modern-sidebar h3 {
+  color: #93c5fd;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.modern-side-section {
+  margin-bottom: 35px;
+}
+
+.modern-side-section h2 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.modern-side-section p {
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+.modern-content {
+  padding: 40px 35px;
+  background: #ffffff;
+}
+
+.modern-content section {
+  margin-bottom: 32px;
+}
+
+.modern-content h2 {
+  color: #092eaa;
+  font-size: 20px;
+  border-left: 5px solid #2563eb;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+
+.modern-content p {
+  font-size: 14px;
+  color: #374151;
+}
+
+
+/* =====================================
+   CREATIVE TEMPLATE
+===================================== */
+
+.creative-template {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.creative-header {
+  background: linear-gradient(135deg, #9965f2, #f66eab);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.creative-header h1 {
+  font-size: 38px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.creative-header h3 {
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.creative-contact {
+  text-align: right;
+  font-size: 13px;
+}
+
+.creative-contact p {
+  margin: 4px 0;
+}
+
+.creative-content {
+  padding: 35px;
+}
+
+.creative-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 18px rgba(72, 69, 72, 0.08);
+  border-left: 5px solid #bb77fb;
+}
+
+.creative-card h2 {
+  color: #7c3aed;
+  margin-top: 0;
+  font-size: 19px;
+}
+
+.creative-card p {
+  color: #374151;
+  font-size: 14px;
+}
+
+.creative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 800px) {
+  .modern-template {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-sidebar {
+    padding: 30px;
+  }
+
+  .modern-sidebar h3 {
+    margin-bottom: 25px;
+  }
+
+  .creative-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .creative-contact {
+    text-align: left;
+  }
+
+  .creative-grid {
+    grid-template-columns: 1fr;
+  }
+}
